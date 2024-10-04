@@ -19,9 +19,22 @@ let parolaMinuscola
 
 //FASE 3: ELABORAZIONE DATI
  function verifica(word) {
+    // rende la parola minuscola
     parolaMinuscola = word.toLowerCase();
+    // controlla se la parola al inverso
     return parolaUtente === parolaMinuscola.split('').reverse().join('');
  }
 
+//chiediamo al utente di inserire una parola
+parolaUtente = prompt('inserisci una parola')
+//condizione
+if(verifica(parolaUtente)){
+    //visualizzazione risultato
+    alert('la parola inserita è palindroma')
+    console.log('la parola inserita è palindroma');
+}else{ 
+    //visualizzazione risultato
+    alert('la parola inserita non è palindroma')
+    console.log('la parola inserita non è palindroma');
+}
 
-//FASE 4: OUTPUT
