@@ -1,4 +1,4 @@
-/*Palidroma
+/*Palindroma
 Chiedere all’utente di inserire una parola
 Creare una funzione per capire se la parola inserita è palindroma
 */
@@ -22,7 +22,7 @@ let parolaMinuscola
     // rende la parola minuscola
     parolaMinuscola = word.toLowerCase();
     // controlla se la parola al inverso
-    return parolaUtente === parolaMinuscola.split('').reverse().join('');
+    return parolaMinuscola === parolaMinuscola.split('').reverse().join('');
  }
 
 //chiediamo al utente di inserire una parola
