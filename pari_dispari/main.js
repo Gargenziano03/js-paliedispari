@@ -54,4 +54,14 @@ function maggioreMinore(numeroUtente) {
 }
 maggioreMinore(numeroUtente);
 
+function numeroRandom(numeroComputer) {
+    //numero casuale da 1 a 5 per il computer 
+    numeroComputer = Math.floor(Math.random() *5) + 1;
+    //stampa il numero casuale per il computer
+    alert(`il numero del computer è: ${numeroComputer}`)
+    console.log(numeroComputer);
+    
+}
+numeroRandom(numeroComputer);
+
 
