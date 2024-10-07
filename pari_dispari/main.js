@@ -79,6 +79,18 @@ function sumPariDispari(numeroUtente, numeroComputer) {
 }
 sumPariDispari(numeroUtente, numeroComputer);
 
+function vittoria(risultato) {
+    //verifica se il risulstato coincide con la scelta fatta dall'utente
+    if ( risultato === scelta ) {
+        //stampa che l'utante ha vinto
+        alert('hai vinto');
+    //altrimenti
+    }else{
+    //stampa che il computer ha vinto
+        alert('vince il computer');
+    }
+}
+vittoria(risultato);
 
 
 
