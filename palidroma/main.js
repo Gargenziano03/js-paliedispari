@@ -24,6 +24,7 @@ let parolaMinuscola
     // controlla se la parola al inverso
     return parolaMinuscola === parolaMinuscola.split('').reverse().join('');
  }
+ verifica(word);
 
 //chiediamo al utente di inserire una parola
 parolaUtente = prompt('inserisci una parola')
