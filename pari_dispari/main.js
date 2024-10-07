@@ -18,7 +18,6 @@ Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari
 let scelta ;
 let numeroUtente;
 let numeroComputer; 
-let sum;
 let messagge;
 
 //FASE 2: RACCOLTA DATI 
@@ -58,10 +57,28 @@ function numeroRandom(numeroComputer) {
     //numero casuale da 1 a 5 per il computer 
     numeroComputer = Math.floor(Math.random() *5) + 1;
     //stampa il numero casuale per il computer
-    alert(`il numero del computer è: ${numeroComputer}`)
+    alert(`il numero del computer è: ${numeroComputer}`);
     console.log(numeroComputer);
     
 }
 numeroRandom(numeroComputer);
+
+function sumPariDispari(numeroUtente, numeroComputer) {
+    //somma numero dell'utente e del computer 
+    let somma = numeroUtente + numeroComputer;
+    let risultato = somma;
+    // Verificare se la somma è pari 
+    if (risultato % 2 == 0){
+        // stampa è pari in caso sia vero
+        alert(`${risultato} è pari`);
+        // altrimenti
+    }else{
+        //stampa dispari
+        alert(`${risultato} è dispari`);
+    }
+}
+sumPariDispari(numeroUtente, numeroComputer);
+
+
 
 
