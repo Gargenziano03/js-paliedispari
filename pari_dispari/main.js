@@ -19,6 +19,8 @@ let scelta ;
 let numeroUtente;
 let numeroComputer; 
 let messagge;
+let risultato;
+
 
 //FASE 2: RACCOLTA DATI 
 // l'utente sceglie pari o dispari
@@ -66,31 +68,34 @@ numeroRandom(numeroComputer);
 function sumPariDispari(numeroUtente, numeroComputer) {
     //somma numero dell'utente e del computer 
     let somma = numeroUtente + numeroComputer;
-    let risultato = somma;
     // Verificare se la somma è pari 
-    if (risultato % 2 == 0){
+    if (somma % 2 === 0){
         // stampa è pari in caso sia vero
-        alert(`${risultato} è pari`);
+        return true
         // altrimenti
     }else{
         //stampa dispari
-        alert(`${risultato} è dispari`);
+        return false
     }
 }
-sumPariDispari(numeroUtente, numeroComputer);
+console.log(sumPariDispari(numeroUtente, numeroComputer));
+alert(sumPariDispari(numeroUtente, numeroComputer));
+
 
 function vittoria(risultato) {
     //verifica se il risulstato coincide con la scelta fatta dall'utente
     if ( risultato === scelta ) {
         //stampa che l'utante ha vinto
-        alert('hai vinto');
+        alert('hai vinto')
     //altrimenti
     }else{
     //stampa che il computer ha vinto
         alert('vince il computer');
     }
 }
-vittoria(risultato);
+console.log(vittoria(risultato));
+alert(vittoria(risultato));
+
 
 
 
